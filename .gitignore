@@ -1,0 +1,62 @@
+# course config files
+*.yaml
+
+# gradle
+.gradle/
+build
+
+
+# idea config
+.idea
+
+# old stages
+/Zookeeper (Kotlin)/*
+!/Zookeeper (Kotlin)/task/
+/Zookeeper (Kotlin)/task/*
+!/Zookeeper (Kotlin)/task/src
+
+# Project exclude paths
+/Topics/Boolean type and operations. True and false/Determine integer truthiness/out/
+/Topics/Boolean type and operations. True and false/Determine integer truthiness/out/production/classes/
+/Topics/Boolean type and operations. True and false/Program a Boolean function/out/
+/Topics/Boolean type and operations. True and false/Program a Boolean function/out/production/classes/
+/Topics/Comparing numbers. Relational operators/Are the numbers different/out/
+/Topics/Comparing numbers. Relational operators/Are the numbers different/out/production/classes/
+/Topics/If expression/Knights/out/
+/Topics/If expression/Knights/out/production/classes/
+/Topics/Integers in action/Desks/out/
+/Topics/Integers in action/Desks/out/production/classes/
+/Topics/Integers in action/The last digit of a number/out/
+/Topics/Integers in action/The last digit of a number/out/production/classes/
+/Topics/Integers in action/Time format/out/
+/Topics/Integers in action/Time format/out/production/classes/
+/Topics/Introduction to Kotlin/Hello, Kotlin/out/
+/Topics/Introduction to Kotlin/Hello, Kotlin/out/production/classes/
+/Topics/Introduction to Kotlin/Interoperability with Java/out/
+/Topics/Introduction to Kotlin/Interoperability with Java/out/production/classes/
+/Topics/Introduction to Kotlin/Place of work/out/
+/Topics/Introduction to Kotlin/Place of work/out/production/classes/
+/Topics/Introduction to Kotlin/Theory/out/
+/Topics/Introduction to Kotlin/Theory/out/production/classes/
+/Topics/Invoking functions/Crafting Welcomes  A Personalized Hello/out/
+/Topics/Invoking functions/Crafting Welcomes  A Personalized Hello/out/production/classes/
+/Topics/Invoking functions/Lembas/out/
+/Topics/Invoking functions/Lembas/out/production/classes/
+/Topics/Loops  repeat statement/Print a string exactly ten times/out/
+/Topics/Loops  repeat statement/Print a string exactly ten times/out/production/classes/
+/Topics/Loops  repeat statement/Sum of squares of even numbers up to a limit/out/
+/Topics/Loops  repeat statement/Sum of squares of even numbers up to a limit/out/production/classes/
+/Topics/Standard input with Java Scanner/Adding five to a number, then doubling it/out/
+/Topics/Standard input with Java Scanner/Adding five to a number, then doubling it/out/production/classes/
+/Topics/Standard output/From 0 to 9/out/
+/Topics/Standard output/From 0 to 9/out/production/classes/
+/Topics/Standard output/Tic-Tac-Toe/out/
+/Topics/Standard output/Tic-Tac-Toe/out/production/classes/
+/Topics/String basics/I'm learning Kotlin/out/
+/Topics/String basics/I'm learning Kotlin/out/production/classes/
+/Topics/While loops/Balance checker/out/
+/Topics/While loops/Balance checker/out/production/classes/
+/Topics/While loops/Descending digits dance/out/
+/Topics/While loops/Descending digits dance/out/production/classes/
+/Topics/While loops/Generate the Fibonacci sequence upto nth term/out/
+/Topics/While loops/Generate the Fibonacci sequence upto nth term/out/production/classes/

@@ -113,7 +113,7 @@ const val rabbit = """Switching on the camera in the rabbit habitat...
 (" ~----( ~   Y.  )
 It looks like we will soon have more rabbits!"""
 
-val animals = arrayOf(camel, lion, deer, goose, bat, rabbit)
+val animals = listOf(camel, lion, deer, goose, bat, rabbit)
 
 fun main() {
     do {

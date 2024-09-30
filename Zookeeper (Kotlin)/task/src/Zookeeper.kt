@@ -116,19 +116,15 @@ It looks like we will soon have more rabbits!"""
 val animals = arrayOf(camel, lion, deer, goose, bat, rabbit)
 
 fun main() {
-    var userInput: String
-
     do {
         print("Please enter the number of the habitat you would like to view: ")
-        userInput = readln()
-        println()
+        val userInput = readlnOrNull() ?: return println("Please input a valid number")
 
         val result = when (true) {
-                (userInput == "exit") -> "See you later!"
-                (userInput.toIntOrNull() == null) -> "Please input a valid number"
-                (userInput.toInt() > animals.lastIndex) -> "please enter a in the following range: ${ 0..animals.lastIndex }"
-                else -> animals[userInput.toInt()]
-            }
+            (userInput == "exit") -> "See you later!"
+            (userInput.toInt() > animals.lastIndex) -> "please enter a in the following range: ${0..animals.lastIndex}"
+            else -> animals[userInput.toInt()]
+        }
 
         println(result)
     } while (userInput != "exit")

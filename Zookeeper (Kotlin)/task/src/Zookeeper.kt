@@ -121,15 +121,19 @@ fun main() {
     do {
         println("Please enter the number of the habitat you would like to view: ")
 
-        userInput = readlnOrNull() ?: return println("Please provide valid Input")
+        userInput = readlnOrNull() ?: return println("Input may not be null.")
 
-        if (userInput == "exit") println("See you later!")
-
-        val message = userInput.toIntOrNull()?.let {
-                if (it in 0..animals.lastIndex) animals[it]
-                else "please enter a number in the following range: ${0..animals.lastIndex}"
-        }
-
-        println(message)
+        userInput.toIntOrNull()?.let { input -> displayResponse(input) } ?: displayResponse(userInput)
     } while (userInput != "exit")
 }
+
+private fun displayResponse(input: String) = println(
+    if (input == "exit") "See you later!"
+    else "Please provide valid Input, either a number or 'exit' to stop the application."
+)
+
+
+private fun displayResponse(input: Int) = println(
+    if (input in 0..animals.lastIndex) animals[input]
+    else "please enter a number in the following range: ${0..animals.lastIndex}"
+)

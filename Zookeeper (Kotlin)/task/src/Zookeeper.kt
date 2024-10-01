@@ -123,7 +123,7 @@ fun main() {
 
         userInput = readlnOrNull() ?: return println("Input may not be null.")
 
-        userInput.toIntOrNull()?.let { input -> displayResponse(input) } ?: displayResponse(userInput)
+        userInput.toIntOrNull()?.let { displayResponse(it) } ?: displayResponse(userInput)
     } while (userInput != "exit")
 }
 

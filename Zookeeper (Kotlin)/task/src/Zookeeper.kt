@@ -127,13 +127,13 @@ fun main() {
     } while (userInput != "exit")
 }
 
-private fun displayResponse(input: String) = println(
+private fun displayResponse(input: String): Unit = println(
     if (input == "exit") "See you later!"
     else "Please provide valid Input, either a number or 'exit' to stop the application."
 )
 
 
-private fun displayResponse(input: Int) = println(
+private fun displayResponse(input: Int): Unit = println(
     if (input in 0..animals.lastIndex) animals[input]
     else "please enter a number in the following range: ${0..animals.lastIndex}"
 )
